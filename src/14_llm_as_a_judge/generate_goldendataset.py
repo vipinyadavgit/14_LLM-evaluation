@@ -1,0 +1,19 @@
+import json
+
+samples = [
+    {"id": 1, "question": "What is SQL indexing?", "answer": "SQL indexing is a data structure technique used to quickly locate and access the data in a database table."},
+    {"id": 2, "question": "What is a primary key?", "answer": "A primary key is a unique identifier for a record in a database table."},
+    {"id": 3, "question": "What is a foreign key?", "answer": "A foreign key is a field in a database table that links to the primary key of another table."},
+    {"id": 4, "question": "What is normalization?", "answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity."},
+    {"id": 5, "question": "What is denormalization?", "answer": "Denormalization is the process of combining tables to improve read performance at the cost of write performance and data integrity."},
+    {"id": 6, "question": "What is a composite key?", "answer": "A composite key is a combination of two or more columns in a database table that uniquely identifies a row in that table."},
+    {"id": 7, "question": "What is a surrogate key?", "answer": "A surrogate key is an artificial key that is used to uniquely identify a record in a table, often implemented as an auto-incrementing integer."},
+    {"id": 8, "question": "What is a natural key?", "answer": "A natural key is a type of primary key that is formed of attributes that naturally exist and are used to identify a record."},
+    {"id": 9, "question": "What is a database schema?", "answer": "A database schema is the structure that defines the organization of data in a database, including tables, fields, relationships, and constraints."},
+    {"id": 10, "question": "What is a database instance?", "answer": "A database instance is a specific implementation of a database, including the data and the database management system (DBMS) that manages it."}
+]
+
+with open("data/goldendataset.json", "w") as f:
+    json.dump(samples, f, indent=4)
+
+print("Golden dataset created")
