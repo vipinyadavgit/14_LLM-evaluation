@@ -18,5 +18,5 @@ evaluation_results.csv
 
 =============================================================================
 RUN command
-
+uncomment key and model in .env
 uv run python main.py
